@@ -193,7 +193,7 @@ namespace Object_Oriented_Programming
                 try
                 {
                     conn.Open();
-                    string checkQuery = "SELECT COUNT(1) FROM tbl_logInfo WHERE contact_no = @contactNo";
+                    string checkQuery = "SELECT COUNT(1) FROM tbl_logInfos WHERE contact_no = @contactNo";
                     using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
                     {
                         checkCmd.Parameters.AddWithValue("@contactNo", contactNo);
@@ -269,7 +269,7 @@ namespace Object_Oriented_Programming
                 try
                 {
                     conn.Open();
-                    string checkQuery = "SELECT COUNT(1) FROM tbl_logInfo WHERE email_address = @email";
+                    string checkQuery = "SELECT COUNT(1) FROM tbl_logInfos WHERE email_address = @email";
                     using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
                     {
                         checkCmd.Parameters.AddWithValue("@email", email);
@@ -351,7 +351,7 @@ namespace Object_Oriented_Programming
                 try
                 {
                     conn.Open();
-                    string checkQuery = "SELECT COUNT(1) FROM tbl_logInfo WHERE user_name = @username";
+                    string checkQuery = "SELECT COUNT(1) FROM tbl_logInfos WHERE user_name = @username";
                     using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
                     {
                         checkCmd.Parameters.AddWithValue("@username", username);

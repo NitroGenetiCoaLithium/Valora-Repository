@@ -8,7 +8,7 @@ namespace Object_Oriented_Programming
 {
     public partial class Form2 : Form
     {
-        private readonly string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=db_OOP;Integrated Security=True;TrustServerCertificate=True";
+        private readonly string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=db_OOP1;Integrated Security=True;TrustServerCertificate=True";
         private bool isUsernameAvailable = false;
         private bool isContactValid = false;
         private bool isEmailValid = false;
@@ -358,7 +358,7 @@ namespace Object_Oriented_Programming
                     {
                         conn.Open();
 
-                        string insertQuery = "INSERT INTO tbl_logInfo (user_name, pass_word, contact_no, email_address, is_active) VALUES (@username, @password, @contactNo, @email, @isActive)";
+                        string insertQuery = "INSERT INTO tbl_logInfos (user_name, pass_word, contact_no, email_address, is_active) VALUES (@username, @password, @contactNo, @email, @isActive)";
                         using (SqlCommand insertCmd = new SqlCommand(insertQuery, conn))
                         {
                             insertCmd.Parameters.AddWithValue("@username", username);
