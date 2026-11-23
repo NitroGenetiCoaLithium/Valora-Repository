@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pctLogIn = new PictureBox();
             pnlLogIn = new Panel();
+            picShowHidePassword = new PictureBox();
             btnSignUpInLogIn = new Button();
             lblDontHaveAnAccount = new Label();
             btnLogIn = new Button();
@@ -60,6 +61,7 @@
             // pnlLogIn
             // 
             pnlLogIn.BackColor = Color.White;
+            pnlLogIn.Controls.Add(picShowHidePassword);
             pnlLogIn.Controls.Add(btnSignUpInLogIn);
             pnlLogIn.Controls.Add(lblDontHaveAnAccount);
             pnlLogIn.Controls.Add(btnLogIn);
@@ -75,6 +77,18 @@
             pnlLogIn.Name = "pnlLogIn";
             pnlLogIn.Size = new Size(341, 430);
             pnlLogIn.TabIndex = 1;
+            // 
+            // picShowHidePassword
+            // 
+            picShowHidePassword.BackgroundImageLayout = ImageLayout.None;
+            picShowHidePassword.Image = Properties.Resources.eye_open1;
+            picShowHidePassword.Location = new Point(282, 250);
+            picShowHidePassword.Name = "picShowHidePassword";
+            picShowHidePassword.Size = new Size(24, 19);
+            picShowHidePassword.SizeMode = PictureBoxSizeMode.Zoom;
+            picShowHidePassword.TabIndex = 11;
+            picShowHidePassword.TabStop = false;
+            picShowHidePassword.Click += picShowHidePassword_Click;
             // 
             // btnSignUpInLogIn
             // 

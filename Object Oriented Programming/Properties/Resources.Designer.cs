@@ -93,6 +93,26 @@ namespace Object_Oriented_Programming.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye_hidden1 {
+            get {
+                object obj = ResourceManager.GetObject("eye_hidden1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eye_open1 {
+            get {
+                object obj = ResourceManager.GetObject("eye_open1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_illustration_of_a_simple_magnifying_glass_icon_research_tool_magnifying_vector_png_image_12700281 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-illustration-of-a-simple-magnifying-glass-icon-research-tool-magnifying-v" +
