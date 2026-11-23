@@ -11,9 +11,22 @@ namespace Object_Oriented_Programming
 {
     public partial class Form3 : Form
     {
+        private bool isSaved = false;
         public Form3()
         {
             InitializeComponent();
+
+            pctOutlineHeart.Visible = true;
+            pctheart_red.Visible = false;
+
+            pctOutlineHeart2.Visible = true;
+            pctheart_red2.Visible = false;
+
+            pctOutlineHeart3.Visible = true;
+            pctheart_red3.Visible = false;
+
+            pctOutlineHeart4.Visible = true;
+            pctheart_red4.Visible = false;
 
             RoundPanel(pnlLandPgNeedHelp, 20);
             RoundPanel1(pnlFeatured1, 20);
@@ -263,5 +276,70 @@ namespace Object_Oriented_Programming
         {
 
         }
+
+        private void pctOutlineHeart_Click(object sender, EventArgs e)
+        {
+            isSaved = true;
+
+            pctOutlineHeart.Visible = false;
+            pctheart_red.Visible = true;
+        }
+
+        private void pctheart_red_Click(object sender, EventArgs e)
+        {
+            isSaved = false;
+
+            pctheart_red.Visible = false;
+            pctOutlineHeart.Visible = true;
+        }
+
+        private void pctOutlineHeart2_Click(object sender, EventArgs e)
+        {
+            isSaved = true;
+
+            pctOutlineHeart2.Visible = false;
+            pctheart_red2.Visible = true;
+        }
+
+        private void pctheart_red2_Click(object sender, EventArgs e)
+        {
+            isSaved = false;
+
+            pctheart_red2.Visible = false;
+            pctOutlineHeart2.Visible = true;
+        }
+
+        private void pctOutlineHeart3_Click(object sender, EventArgs e)
+        {
+            isSaved = true;
+
+            pctOutlineHeart3.Visible = false;
+            pctheart_red3.Visible = true;
+        }
+
+        private void pctheart_red3_Click(object sender, EventArgs e)
+        {
+            isSaved = false;
+
+            pctheart_red3.Visible = false;
+            pctOutlineHeart3.Visible = true;
+        }
+
+        private void pctOutlineHeart4_Click(object sender, EventArgs e)
+        {
+            isSaved = true;
+
+            pctOutlineHeart4.Visible = false;
+            pctheart_red4.Visible = true;
+        }
+
+        private void pctheart_red4_Click(object sender, EventArgs e)
+        {
+            isSaved = false;
+
+            pctheart_red4.Visible = false;
+            pctOutlineHeart4.Visible = true;
+        }
+
     }
 }

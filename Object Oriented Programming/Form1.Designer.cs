@@ -33,7 +33,6 @@
             btnSignUpInLogIn = new Button();
             lblDontHaveAnAccount = new Label();
             btnLogIn = new Button();
-            chkRememberMe = new CheckBox();
             txtLogInPassword = new TextBox();
             lblLogInPassword = new Label();
             txtEmailAddress = new TextBox();
@@ -61,7 +60,6 @@
             pnlLogIn.Controls.Add(btnSignUpInLogIn);
             pnlLogIn.Controls.Add(lblDontHaveAnAccount);
             pnlLogIn.Controls.Add(btnLogIn);
-            pnlLogIn.Controls.Add(chkRememberMe);
             pnlLogIn.Controls.Add(txtLogInPassword);
             pnlLogIn.Controls.Add(lblLogInPassword);
             pnlLogIn.Controls.Add(txtEmailAddress);
@@ -98,23 +96,13 @@
             btnLogIn.BackColor = Color.DarkGreen;
             btnLogIn.FlatStyle = FlatStyle.Popup;
             btnLogIn.ForeColor = Color.White;
-            btnLogIn.Location = new Point(31, 312);
+            btnLogIn.Location = new Point(31, 295);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(278, 33);
             btnLogIn.TabIndex = 8;
             btnLogIn.Text = "Log In";
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
-            // 
-            // chkRememberMe
-            // 
-            chkRememberMe.AutoSize = true;
-            chkRememberMe.Location = new Point(31, 277);
-            chkRememberMe.Name = "chkRememberMe";
-            chkRememberMe.Size = new Size(104, 19);
-            chkRememberMe.TabIndex = 7;
-            chkRememberMe.Text = "Remember me";
-            chkRememberMe.UseVisualStyleBackColor = true;
             // 
             // txtLogInPassword
             // 
@@ -203,7 +191,6 @@
         private Label lblWelcomeBack;
         private Label lblValora;
         private Button btnLogIn;
-        private CheckBox chkRememberMe;
         private TextBox txtLogInPassword;
         private Label lblLogInPassword;
         private TextBox txtEmailAddress;
