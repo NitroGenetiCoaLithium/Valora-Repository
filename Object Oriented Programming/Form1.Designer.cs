@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pctLogIn = new PictureBox();
             pnlLogIn = new Panel();
             btnSignUpInLogIn = new Button();
@@ -40,8 +41,10 @@
             lblMessageLogIn = new Label();
             lblWelcomeBack = new Label();
             lblValora = new Label();
+            pctLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pctLogIn).BeginInit();
             pnlLogIn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).BeginInit();
             SuspendLayout();
             // 
             // pctLogIn
@@ -67,6 +70,7 @@
             pnlLogIn.Controls.Add(lblMessageLogIn);
             pnlLogIn.Controls.Add(lblWelcomeBack);
             pnlLogIn.Controls.Add(lblValora);
+            pnlLogIn.Controls.Add(pctLogo);
             pnlLogIn.Location = new Point(660, 94);
             pnlLogIn.Name = "pnlLogIn";
             pnlLogIn.Size = new Size(341, 430);
@@ -166,6 +170,16 @@
             lblValora.TabIndex = 0;
             lblValora.Text = "Valora";
             // 
+            // pctLogo
+            // 
+            pctLogo.Image = (Image)resources.GetObject("pctLogo.Image");
+            pctLogo.Location = new Point(145, 11);
+            pctLogo.Name = "pctLogo";
+            pctLogo.Size = new Size(53, 47);
+            pctLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctLogo.TabIndex = 23;
+            pctLogo.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -180,6 +194,7 @@
             ((System.ComponentModel.ISupportInitialize)pctLogIn).EndInit();
             pnlLogIn.ResumeLayout(false);
             pnlLogIn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).EndInit();
             ResumeLayout(false);
         }
 
@@ -197,5 +212,6 @@
         private Label lblEmailAddress;
         private Button btnSignUpInLogIn;
         private Label lblDontHaveAnAccount;
+        private PictureBox pctLogo;
     }
 }

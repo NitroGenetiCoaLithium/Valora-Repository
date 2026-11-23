@@ -77,6 +77,7 @@
             txtSearchBar = new TextBox();
             pctSearchIcon = new PictureBox();
             pnl1HomePage = new Panel();
+            pctLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pctDMAvatarIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pctNotifIcon).BeginInit();
             pnlLandPgNeedHelp.SuspendLayout();
@@ -99,6 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)pctfeaturedApartment3).BeginInit();
             pnlPlaceHolderofbarangay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pctSearchIcon).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).BeginInit();
             SuspendLayout();
             // 
             // pctDMAvatarIcon
@@ -611,6 +613,16 @@
             pnl1HomePage.Size = new Size(1095, 32);
             pnl1HomePage.TabIndex = 21;
             // 
+            // pctLogo
+            // 
+            pctLogo.Image = (Image)resources.GetObject("pctLogo.Image");
+            pctLogo.Location = new Point(17, 5);
+            pctLogo.Name = "pctLogo";
+            pctLogo.Size = new Size(53, 47);
+            pctLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctLogo.TabIndex = 22;
+            pctLogo.TabStop = false;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -635,6 +647,7 @@
             Controls.Add(lblLandPageValora);
             Controls.Add(pctDMAvatarIcon);
             Controls.Add(pnlPlaceHolderofbarangay);
+            Controls.Add(pctLogo);
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;
@@ -665,6 +678,7 @@
             ((System.ComponentModel.ISupportInitialize)pctfeaturedApartment3).EndInit();
             pnlPlaceHolderofbarangay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pctSearchIcon).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -718,5 +732,6 @@
         private PictureBox pctheart_red2;
         private PictureBox pctheart_red4;
         private PictureBox pctheart_red3;
+        private PictureBox pctLogo;
     }
 }
