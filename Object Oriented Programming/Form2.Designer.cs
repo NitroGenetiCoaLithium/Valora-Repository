@@ -320,5 +320,11 @@
         private TextBox txtUsername;
         private Label lblUsername;
         private PictureBox pctLogo;
+
+        private PictureBox picShowPassword2;
+
+        private PictureBox picShowPassword3;
+    
     }
+
 }

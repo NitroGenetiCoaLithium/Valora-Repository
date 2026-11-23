@@ -227,5 +227,7 @@
         private Button btnSignUpInLogIn;
         private Label lblDontHaveAnAccount;
         private PictureBox pctLogo;
+
+        private PictureBox picShowHidePassword;
     }
 }
