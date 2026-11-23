@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pctLogIn = new PictureBox();
             pnlLogIn = new Panel();
             picShowHidePassword = new PictureBox();
             btnSignUpInLogIn = new Button();
             lblDontHaveAnAccount = new Label();
             btnLogIn = new Button();
-            chkRememberMe = new CheckBox();
             txtLogInPassword = new TextBox();
             lblLogInPassword = new Label();
             txtEmailAddress = new TextBox();
@@ -42,9 +42,10 @@
             lblMessageLogIn = new Label();
             lblWelcomeBack = new Label();
             lblValora = new Label();
+            pctLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pctLogIn).BeginInit();
             pnlLogIn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picShowHidePassword).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).BeginInit();
             SuspendLayout();
             // 
             // pctLogIn
@@ -64,7 +65,6 @@
             pnlLogIn.Controls.Add(btnSignUpInLogIn);
             pnlLogIn.Controls.Add(lblDontHaveAnAccount);
             pnlLogIn.Controls.Add(btnLogIn);
-            pnlLogIn.Controls.Add(chkRememberMe);
             pnlLogIn.Controls.Add(txtLogInPassword);
             pnlLogIn.Controls.Add(lblLogInPassword);
             pnlLogIn.Controls.Add(txtEmailAddress);
@@ -72,6 +72,7 @@
             pnlLogIn.Controls.Add(lblMessageLogIn);
             pnlLogIn.Controls.Add(lblWelcomeBack);
             pnlLogIn.Controls.Add(lblValora);
+            pnlLogIn.Controls.Add(pctLogo);
             pnlLogIn.Location = new Point(660, 94);
             pnlLogIn.Name = "pnlLogIn";
             pnlLogIn.Size = new Size(341, 430);
@@ -113,23 +114,13 @@
             btnLogIn.BackColor = Color.DarkGreen;
             btnLogIn.FlatStyle = FlatStyle.Popup;
             btnLogIn.ForeColor = Color.White;
-            btnLogIn.Location = new Point(31, 312);
+            btnLogIn.Location = new Point(31, 295);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(278, 33);
             btnLogIn.TabIndex = 8;
             btnLogIn.Text = "Log In";
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
-            // 
-            // chkRememberMe
-            // 
-            chkRememberMe.AutoSize = true;
-            chkRememberMe.Location = new Point(31, 277);
-            chkRememberMe.Name = "chkRememberMe";
-            chkRememberMe.Size = new Size(104, 19);
-            chkRememberMe.TabIndex = 7;
-            chkRememberMe.Text = "Remember me";
-            chkRememberMe.UseVisualStyleBackColor = true;
             // 
             // txtLogInPassword
             // 
@@ -193,6 +184,16 @@
             lblValora.TabIndex = 0;
             lblValora.Text = "Valora";
             // 
+            // pctLogo
+            // 
+            pctLogo.Image = (Image)resources.GetObject("pctLogo.Image");
+            pctLogo.Location = new Point(145, 11);
+            pctLogo.Name = "pctLogo";
+            pctLogo.Size = new Size(53, 47);
+            pctLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctLogo.TabIndex = 23;
+            pctLogo.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -207,7 +208,7 @@
             ((System.ComponentModel.ISupportInitialize)pctLogIn).EndInit();
             pnlLogIn.ResumeLayout(false);
             pnlLogIn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picShowHidePassword).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).EndInit();
             ResumeLayout(false);
         }
 
@@ -219,13 +220,12 @@
         private Label lblWelcomeBack;
         private Label lblValora;
         private Button btnLogIn;
-        private CheckBox chkRememberMe;
         private TextBox txtLogInPassword;
         private Label lblLogInPassword;
         private TextBox txtEmailAddress;
         private Label lblEmailAddress;
         private Button btnSignUpInLogIn;
         private Label lblDontHaveAnAccount;
-        private PictureBox picShowHidePassword;
+        private PictureBox pctLogo;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             pctSignUp = new PictureBox();
             pnlSignUp = new Panel();
             picShowPassword2 = new PictureBox();
@@ -49,10 +50,10 @@
             txtSignUpEmailAddress = new TextBox();
             lblSignUpEmailAddress = new Label();
             lblSignUpValora = new Label();
+            pctLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pctSignUp).BeginInit();
             pnlSignUp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picShowPassword2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picShowPassword3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).BeginInit();
             SuspendLayout();
             // 
             // pctSignUp
@@ -87,6 +88,7 @@
             pnlSignUp.Controls.Add(txtSignUpEmailAddress);
             pnlSignUp.Controls.Add(lblSignUpEmailAddress);
             pnlSignUp.Controls.Add(lblSignUpValora);
+            pnlSignUp.Controls.Add(pctLogo);
             pnlSignUp.Location = new Point(662, 29);
             pnlSignUp.Name = "pnlSignUp";
             pnlSignUp.Size = new Size(341, 571);
@@ -269,6 +271,16 @@
             lblSignUpValora.TabIndex = 0;
             lblSignUpValora.Text = "Valora";
             // 
+            // pctLogo
+            // 
+            pctLogo.Image = (Image)resources.GetObject("pctLogo.Image");
+            pctLogo.Location = new Point(145, 12);
+            pctLogo.Name = "pctLogo";
+            pctLogo.Size = new Size(53, 47);
+            pctLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctLogo.TabIndex = 23;
+            pctLogo.TabStop = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -282,8 +294,7 @@
             ((System.ComponentModel.ISupportInitialize)pctSignUp).EndInit();
             pnlSignUp.ResumeLayout(false);
             pnlSignUp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picShowPassword2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picShowPassword3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pctLogo).EndInit();
             ResumeLayout(false);
         }
 
@@ -308,9 +319,6 @@
         private Label lblConfirmPassword;
         private TextBox txtUsername;
         private Label lblUsername;
-        private PictureBox picShowPassword3;
-        private PictureBox picShowPassword2;
-
-        
+        private PictureBox pctLogo;
     }
 }
